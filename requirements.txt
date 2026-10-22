@@ -1,0 +1,11 @@
+# Optional feature libraries; the server and many tools use only Python's standard library.
+Pillow>=10.4,<13
+pypdf>=5,<7
+Markdown>=3.7,<4
+beautifulsoup4>=4.12,<5
+openpyxl>=3.1,<4
+reportlab>=4.2,<5
+pyperclip>=1.9,<2
+pytesseract>=0.3.13,<0.4
+icalendar>=6,<8
+paho-mqtt>=2.1,<3

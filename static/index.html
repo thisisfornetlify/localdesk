@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#203e33">
+  <title>LocalDesk — Your everyday toolbox</title>
+  <script src="/theme.js"></script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/theme.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <button class="mobile-menu" id="menu-toggle" aria-label="Toggle navigation">☰</button>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#overview"><span class="brand-mark">l<span>·</span>d</span><span>LocalDesk<small>THE EVERYDAY TOOLBOX</small></span></a>
+    <div class="sidebar-label">WORKSPACE</div>
+    <nav id="main-nav" aria-label="Main navigation"></nav>
+    <div class="sidebar-label category-label">YOUR TOOLBOX <span id="tool-count">32</span></div>
+    <nav id="category-nav" aria-label="Tool categories"></nav>
+    <div class="sidebar-footer">
+      <a href="#file-history" class="nav-item"><span>↶</span> File history</a>
+      <a href="#settings" class="nav-item"><span>⚙</span> Settings & setup</a>
+      <div class="local-status"><i></i><span>On your computer<small>Local storage · loopback server</small></span></div>
+    </div>
+  </aside>
+  <div class="shell">
+    <header class="topbar">
+      <div class="breadcrumb" id="breadcrumb">Workspace <span>/</span> Overview</div>
+      <div class="topbar-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode"><span id="theme-icon" aria-hidden="true">☾</span><span class="theme-label" id="theme-label">Dark mode</span></button>
+        <button class="search-launch" id="search-launch"><span>⌕</span> Find a tool <kbd>Ctrl K</kbd></button>
+        <a href="#notifications" class="notification-button" id="notifications-link" aria-label="Notifications">♧<b id="notification-count" hidden>0</b></a>
+        <span class="avatar" title="Your local workspace">LD</span>
+      </div>
+    </header>
+    <main id="main" tabindex="-1"><div class="loading-page">Opening your workspace…</div></main>
+    <footer class="page-footer"><span>Made for the work between the work.</span><span><i></i> LOCALDESK / v1.0</span></footer>
+  </div>
+  <dialog id="search-dialog"><div class="search-dialog-head"><span>⌕</span><input id="global-search" placeholder="What would you like to do?" aria-label="Search tools"><button id="close-search" aria-label="Close search">Esc</button></div><div id="search-results"></div></dialog>
+  <div class="toast-region" id="toasts" role="status" aria-live="polite"></div>
+</body>
+</html>

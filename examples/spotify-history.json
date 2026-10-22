@@ -1,0 +1,5 @@
+[
+  {"artistName":"Sample Artist A","trackName":"Morning Light","msPlayed":180000,"endTime":"2026-10-20 09:00"},
+  {"artistName":"Sample Artist A","trackName":"Morning Light","msPlayed":180000,"endTime":"2026-10-21 09:00"},
+  {"artistName":"Sample Artist B","trackName":"Quiet Desk","msPlayed":240000,"endTime":"2026-10-21 14:00"}
+]
